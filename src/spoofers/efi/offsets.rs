@@ -1,0 +1,23 @@
+pub const EFI_RT_GET_TIME: usize = 2;
+pub const EFI_RT_GET_VARIABLE: usize = 3;
+pub const EFI_RT_GET_NEXT_VARIABLE_NAME: usize = 4;
+pub const EFI_RT_SET_VARIABLE: usize = 5;
+pub const EFI_RT_GET_WAKEUP_TIME: usize = 6;
+pub const EFI_RT_SET_WAKEUP_TIME: usize = 7;
+
+pub const EFI_GLOBAL_VARIABLE_GUID: [u8; 16] = [
+    0x61, 0xDF, 0xE4, 0x8B, 0xCA, 0x93, 0xD2, 0x11, 0xAA, 0x0D, 0x00, 0xE0, 0x98, 0x03, 0x2B, 0x8C,
+];
+
+pub const HAL_EFI_TABLE_PATTERN: &[u8] = &[0x48, 0x8B, 0x05];
+
+pub const HAL_FIRMWARE_TYPE_PATTERN: &[u8] = &[0x83, 0x3D];
+
+pub const EFI_SUCCESS: u64 = 0;
+pub const EFI_NOT_FOUND: u64 = 0x800000000000000E;
+pub const EFI_BUFFER_TOO_SMALL: u64 = 0x8000000000000005;
+pub const EFI_INVALID_PARAMETER: u64 = 0x8000000000000002;
+
+pub const EFI_VARIABLE_NON_VOLATILE: u32 = 0x00000001;
+pub const EFI_VARIABLE_BOOTSERVICE_ACCESS: u32 = 0x00000002;
+pub const EFI_VARIABLE_RUNTIME_ACCESS: u32 = 0x00000004;

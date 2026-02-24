@@ -1,0 +1,26 @@
+pub const MOUNTMGR_GDEVICE_OBJECT: u64 = 0x7198;
+
+pub const DEVICE_OBJECT_DEVICE_EXTENSION: u64 = 0x40;
+
+pub const EXTENSION_MOUNTED_DEVICES_LIST: u64 = 0x10;
+
+pub const MOUNTED_DEVICE_LIST_ENTRY: u64 = 0x00;
+pub const MOUNTED_DEVICE_SYMBOLIC_LINKS: u64 = 0x10;
+pub const MOUNTED_DEVICE_DEVICE_NAME: u64 = 0x40;
+pub const MOUNTED_DEVICE_UNIQUE_ID: u64 = 0x60;
+
+pub const SYMBOLIC_LINK_LIST_ENTRY: u64 = 0x00;
+pub const SYMBOLIC_LINK_IS_ACTIVE: u64 = 0x10;
+pub const SYMBOLIC_LINK_NAME: u64 = 0x18;
+
+pub const LIST_ENTRY_FLINK: u64 = 0x00;
+pub const LIST_ENTRY_BLINK: u64 = 0x08;
+
+pub const UNICODE_STRING_LENGTH: u64 = 0x00;
+pub const UNICODE_STRING_MAX_LENGTH: u64 = 0x02;
+pub const UNICODE_STRING_BUFFER: u64 = 0x08;
+
+pub const VOLUME_GUID_PREFIX: &str = "\\??\\Volume{";
+pub const VOLUME_GUID_LENGTH: usize = 96;
+pub const VOLUME_GUID_CHAR_COUNT: usize = 36;
+pub const VOLUME_GUID_START_OFFSET: usize = 11;

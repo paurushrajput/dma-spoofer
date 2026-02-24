@@ -1,0 +1,12 @@
+pub mod arp;
+pub mod boot;
+pub mod disk;
+pub mod efi;
+pub mod gpu;
+pub mod monitor;
+pub mod nic;
+pub mod registry;
+pub mod smbios;
+pub mod tpm;
+pub mod usb;
+pub mod volume;
